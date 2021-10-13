@@ -13,22 +13,25 @@ struct ContentView: View {
     let questions = ["5", "10", "20", "All"]
     
     var body: some View {
-        Form {
-            Section(header: Text("How many questions ?")) {
-                Picker("Questions amount", selection: $questionSelection) {
-                    ForEach(0 ..< questions.count) {
-                        Text("\(self.questions[$0])")
+        NavigationView {
+            Form {
+                Section(header: Text("How many questions ?")) {
+                    Picker("Questions amount", selection: $questionSelection) {
+                        ForEach(0 ..< questions.count) {
+                            Text("\(self.questions[$0])")
+                        }
                     }
+                    .pickerStyle(.segmented)
                 }
-                .pickerStyle(.segmented)
-            }
-            
-            Section(header: Text("Which multiplication table ?")) {
-                Stepper(value: $multiplicationTable, in: 1...12) {
-                    Text("Multiplication table \(multiplicationTable)")
+                
+                Section(header: Text("Which multiplication table ?")) {
+                    Stepper(value: $multiplicationTable, in: 1...12) {
+                        Text("Multiplication table \(multiplicationTable)")
+                    }
+                    .animation(.default)
                 }
-                .animation(.default)
             }
+            .navigationBarTitle("Edutainment")
         }
     }
 }
