@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var settingDone = false
     @State private var multiplicationTable = 1
     @State private var questionSelection = 1
+    
     let questions = ["5", "10", "20", "All"]
     
     var body: some View {
