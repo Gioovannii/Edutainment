@@ -11,6 +11,7 @@
 		7BA291702716A8E5006806F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2916F2716A8E5006806F8 /* ContentView.swift */; };
 		7BA291722716A8E6006806F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA291712716A8E6006806F8 /* Assets.xcassets */; };
 		7BA291752716A8E6006806F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA291742716A8E6006806F8 /* Preview Assets.xcassets */; };
+		7BA2917C2716D38A006806F8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2917B2716D38A006806F8 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7BA2916F2716A8E5006806F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BA291712716A8E6006806F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BA291742716A8E6006806F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BA2917B2716D38A006806F8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7BA2916D2716A8E5006806F8 /* EdutainmentApp.swift */,
 				7BA2916F2716A8E5006806F8 /* ContentView.swift */,
+				7BA2917B2716D38A006806F8 /* Question.swift */,
 				7BA291712716A8E6006806F8 /* Assets.xcassets */,
 				7BA291732716A8E6006806F8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA2917C2716D38A006806F8 /* Question.swift in Sources */,
 				7BA291702716A8E5006806F8 /* ContentView.swift in Sources */,
 				7BA2916E2716A8E5006806F8 /* EdutainmentApp.swift in Sources */,
 			);
