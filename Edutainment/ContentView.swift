@@ -40,6 +40,14 @@ struct ContentView: View {
     }
 }
 
+
+struct Question {
+    let answer = "0"
+    
+    func multiple(multiplier: Int, multiplicand: Int) -> Int {
+        return multiplier * multiplicand
+    }
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
