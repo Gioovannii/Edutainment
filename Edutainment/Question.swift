@@ -13,7 +13,12 @@ struct Question {
     let questions = [String]()
     
     func getMultiplication(multiplicand: Int) -> Int {
-        
+        var localQuestions = [String]()
+        for index in 1...12 {
+
+            print("\(multiplicationTable) X \(index) = \(index * multiplicationTable)")
+            localQuestions.append("\(index * multiplicationTable)")
+        }
         return multiplicationTable * multiplicand
     }
 }
