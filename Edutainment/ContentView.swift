@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var questions = [Question]()
     
     let numberOfQuestions = ["5", "10", "20", "All"]
+    
     var body: some View {
         NavigationView {
             Group {
@@ -29,7 +30,6 @@ struct ContentView: View {
                             }
                             .animation(.default)
                         }
-                        
                         
                         Section(header: Text("How many questions ?")) {
                             Picker("Questions amount", selection: $questionSelection) {
@@ -62,7 +62,7 @@ struct ContentView: View {
             let random1 = Int.random(in: 1...multiplicationTable)
             let random2 = Int.random(in: 1...12)
             
-            let question = Question(text: "\(random1) * \(random2)", answer: random1 * random2)
+            let question = Question(text: "\(random1) x \(random2)", answer: random1 * random2)
             questions.append(question)
         }
     }
