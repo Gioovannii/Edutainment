@@ -13,10 +13,8 @@ struct GameView: View {
     let callback: () -> ()
     
     @State private var answerAmount = ""
-    
     @State private var currentQuestion = 1
     @State private var score = 0
-    
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     @State private var showAlert = false
@@ -29,6 +27,7 @@ struct GameView: View {
                 Spacer()
                 Text("Your score: \(score)")
             }
+            
             Text(questions[currentQuestion].text).font(.largeTitle).padding()
             TextField("Your answer", text: $answerAmount).keyboardType(.numberPad)
             
@@ -43,10 +42,6 @@ struct GameView: View {
                         self.callback()
                     })
             }
-        
-            
-            Spacer()
-            
         }.padding()
     }
     
@@ -84,7 +79,6 @@ struct GameView: View {
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView(questions: [Question(text: "4 x 9", answer: 36)],  numberQuestion: 10) {
-            
         }
     }
 }
